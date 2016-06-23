@@ -1,0 +1,16 @@
+.form-button {
+    color: white;
+    text-transform: uppercase;
+    font-family: $ProximaNova-Bold;
+    background-color: $medBlue;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 5%;
+    span:first-child {
+      margin-right: 1rem;
+    }
+  }

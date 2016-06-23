@@ -1,0 +1,10 @@
+.expiration-group {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text-input {
+    @extend .text-group__text-input;
+  }
+}

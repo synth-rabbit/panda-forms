@@ -1,0 +1,12 @@
+.error-group {
+  background-color: #F2DEDE;
+  margin-bottom: 2rem;
+  padding: 1rem;
+
+  &__list {
+    &-item {
+      color: #A94442;
+      font-size: 1rem;
+    }
+  }
+}

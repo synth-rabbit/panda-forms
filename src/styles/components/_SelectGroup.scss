@@ -1,0 +1,24 @@
+.select-group {
+  &__select {
+    @extend .text-group__text-input;
+    appearance: none;
+    border-radius: 0;
+    background-color: white;
+    padding-left: 1rem;
+    position: relative;
+  }
+  &__arrow {
+    position: relative;
+    &:after {
+      content:'<>';
+      font: 1rem "Consolas", monospace;
+      color: $medBlue;
+      transform:rotate(90deg);
+      right:8px; top:2px;
+      padding:0 0 2px;
+      border-bottom:1px solid #ddd;
+      position:absolute;
+      pointer-events:none;
+    }
+  }
+}

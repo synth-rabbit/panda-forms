@@ -1,0 +1,5 @@
+.date-input {
+  &__date {
+    @extend .text-group__text-input;
+  }
+}

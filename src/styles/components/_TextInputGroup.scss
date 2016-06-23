@@ -1,0 +1,17 @@
+.text-group {
+  &__label {
+    margin-bottom: .5rem;
+  }
+  &__required {
+    color: red;
+  }
+  &__text-input{
+    padding-left: 1rem;
+    border: none;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    margin-top: .5rem;
+  }
+
+}

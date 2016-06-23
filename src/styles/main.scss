@@ -1,0 +1,18 @@
+@import './libs/normalize';
+@import './libs/date-picker';
+@import './base/fonts';
+@import './base/variables';
+@import './base/mixins';
+@import './components/index';
+
+.body {
+  font-family: $ProximaNova-Regular;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
