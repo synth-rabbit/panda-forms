@@ -36,58 +36,58 @@ Panda Forms is a form library made with react and mobx to provide a way to rapid
       return(
         <Form title='Example' styleClass='panda-form'>
           <FormRow styleClass='form-row'>
-          <TextInputGroup
-            groupWidth='49%'
-            inputWidth='100%'
-            label='Email Input'
-            required={true}
-            changeFunction={this.handleChange}
-            id={'$email-email'}
-            value={values.$emailEmail}
-            placeholder='Enter Text'
-            inputStyleClass='text-group__text-input'
-            labelStyleClass='text-group__label'
-          />
-          <GroupContainer
-            groupWidth='49%'
-            label='Check Box Group'
-            labelStyleClass='group-container__label'
-            required={false}
-          >
-            <CheckboxGroup
-              inputStyleClass='checkbox-group__checkbox'
-              labelStyleClass='checkbox-group__label'
-              groupStyleClass='checkbox-group'
-              checked={values.$checkboxCheckboxA}
-              id='$checkbox-checkbox-a'
+            <TextInputGroup
+              groupWidth='49%'
+              inputWidth='100%'
+              label='Email Input'
               required={true}
-              groupWidth='100%'
-              label='Check this box A'
               changeFunction={this.handleChange}
+              id={'$email-email'}
+              value={values.$emailEmail}
+              placeholder='Enter Text'
+              inputStyleClass='text-group__text-input'
+              labelStyleClass='text-group__label'
             />
-            <CheckboxGroup
-              inputStyleClass='checkbox-group__checkbox'
-              labelStyleClass='checkbox-group__label'
-              groupStyleClass='checkbox-group'
-              checked={values.$checkboxCheckboxB}
-              id='$checkbox-checkbox-b'
+            <GroupContainer
+              groupWidth='49%'
+              label='Check Box Group'
+              labelStyleClass='group-container__label'
               required={false}
-              groupWidth='100%'
-              label='Check this box B'
-              changeFunction={this.handleChange}
-            />
-            <CheckboxGroup
-              inputStyleClass='checkbox-group__checkbox'
-              labelStyleClass='checkbox-group__label'
-              groupStyleClass='checkbox-group'
-              checked={values.$checkboxCheckboxC}
-              id='$checkbox-checkbox-c'
-              required={false}
-              groupWidth='100%'
-              label='Check this box C'
-              changeFunction={this.handleChange}
-            />
-          </GroupContainer>
+            >
+              <CheckboxGroup
+                inputStyleClass='checkbox-group__checkbox'
+                labelStyleClass='checkbox-group__label'
+                groupStyleClass='checkbox-group'
+                checked={values.$checkboxCheckboxA}
+                id='$checkbox-checkbox-a'
+                required={true}
+                groupWidth='100%'
+                label='Check this box A'
+                changeFunction={this.handleChange}
+              />
+              <CheckboxGroup
+                inputStyleClass='checkbox-group__checkbox'
+                labelStyleClass='checkbox-group__label'
+                groupStyleClass='checkbox-group'
+                checked={values.$checkboxCheckboxB}
+                id='$checkbox-checkbox-b'
+                required={false}
+                groupWidth='100%'
+                label='Check this box B'
+                changeFunction={this.handleChange}
+              />
+              <CheckboxGroup
+                inputStyleClass='checkbox-group__checkbox'
+                labelStyleClass='checkbox-group__label'
+                groupStyleClass='checkbox-group'
+                checked={values.$checkboxCheckboxC}
+                id='$checkbox-checkbox-c'
+                required={false}
+                groupWidth='100%'
+                label='Check this box C'
+                changeFunction={this.handleChange}
+              />
+            </GroupContainer>
           </FormRow>
         </Form>
       )
