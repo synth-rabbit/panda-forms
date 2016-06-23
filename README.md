@@ -147,14 +147,22 @@ Panda Forms is a form library made with react and mobx to provide a way to rapid
 * [validation](#validation)
 
 
+
+
 ## Styles <a name='styles'></a>
 
 To use the default styles include the panda-form.css stylesheet found in lib/assets.
 And follow the naming conventions outlined below.
 
+
+
+
 ## Components
 
 Have the changeFunction on components call this.props.formStore.updateInfo to properly validate
+
+
+
 
 ### CheckboxGroup <a name='checkboxgroup'></a>
 
@@ -186,6 +194,8 @@ to function correctly
 ```
 
 
+
+
 ### ErrorGroup <a name='errorgroup'></a>
 
 creates a box to display errors
@@ -201,6 +211,8 @@ include stylesheet for default styles
 ```javascript
   errors={this.props.formStore.errors}
 ```
+
+
 
 ### ExpirationInputGroup <a name='expirationinputgroup'></a>
 
@@ -244,6 +256,8 @@ to function correctly
 ```
 
 
+
+
 ### Form <a name='form'></a>
 
 acts as a container for other components.  not required for other components to work
@@ -268,6 +282,8 @@ acts as a container for other components.  not required for other components to 
 ```
 
 
+
+
 ### FormButton <a name='formbutton'></a>
 
 calls the submit function.  submit function should call formStore.validateAll.
@@ -283,6 +299,8 @@ symbol is what follows after text
 * **text :** string *required*
 
 #### Config (for default style)
+
+
 
 
 ### FormRow <a name='formrow'></a>
@@ -307,6 +325,9 @@ doesn't do anything if stylesheet not used
     <child-component />
   </FormRow>
 ```
+
+
+
 
 ### GroupContainer
 
@@ -339,6 +360,8 @@ required set to true will put an asterisk next to the label
     <child-component />
   </GroupContainer>
 ```
+
+
 
 
 ### RadioButtonGroup <a name='radiobuttongroup'></a>
@@ -375,6 +398,8 @@ you can have multiple radio button groups they just need a different group name
 ```
 
 
+
+
 ### SelectGroup <a name='selectgroup'></a>
 
 creates a select box
@@ -402,6 +427,8 @@ creates a select box
 ```
 
 
+
+
 ### TextBoxGroup <a name='textboxgroup'></a>
 
 creates a text area input  
@@ -427,6 +454,8 @@ creates a text area input
   labelStyleClass='text-group__label'
   value={this.props.formStore.info.whatever}
 ```
+
+
 
 
 ### TextInputGroup <a name='textinputgroup'></a>
