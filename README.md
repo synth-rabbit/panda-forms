@@ -214,6 +214,7 @@ include stylesheet for default styles
 
 
 
+
 ### ExpirationInputGroup <a name='expirationinputgroup'></a>
 
 displays credit card expiration inputs
@@ -457,7 +458,7 @@ creates a text area input
 
 
 
-
+    
 ### TextInputGroup <a name='textinputgroup'></a>
 
 creates a text input  
