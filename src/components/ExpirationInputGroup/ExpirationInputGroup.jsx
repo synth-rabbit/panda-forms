@@ -46,7 +46,6 @@ ExpirationInputGroup.propTypes = {
   monthPlaceholder: React.PropTypes.string,
   monthStyleClass: React.PropTypes.string,
   monthWidth: React.PropTypes.string,
-  name: React.PropTypes.string,
   yearMaxLength: React.PropTypes.number,
   yearPlaceholder: React.PropTypes.string,
   yearStyleClass: React.PropTypes.string,
