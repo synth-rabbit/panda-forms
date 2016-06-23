@@ -604,43 +604,43 @@ In order to validate it as required make sure the proper value in the required a
 
 validates the value in the info object as a credit card
 
-**camelCase: ** $creditWhatever
-**snake-case: ** $credit-whatever
+* **camelCase:** $creditWhatever
+* **snake-case:** $credit-whatever
 
 #### $checkbox
 
 lets the store know how to update a checkbox field. Currently can only require one checkbox and not groups of checkboxes.
 
-**camelCase: ** $checkboxWhatever
-**snake-case: ** $checkbox-whatever
+* **camelCase:** $checkboxWhatever
+* **snake-case:** $checkbox-whatever
 
 #### $date
 
 validates the value in the info object as a date.  date format must be `'MM/DD/YYYY'` or `'YYYY/MM/DD'`
 
-**camelCase: ** $dateWhatever
-**snake-case: ** $date-whatever
+* **camelCase:** $dateWhatever
+* **snake-case:** $date-whatever
 
 ### $expiration
 
 validates that the value is numerical and 2 digits in length
 
-**camelCase: ** $expirationWhatever
-**snake-case: ** $expirationWhatever
+* **camelCase:** $expirationWhatever
+* **snake-case:** $expirationWhatever
 
 #### $email
 
 validates the value in the info object as an email address
 
-**camelCase: ** $emailWhatever
-**snake-case: ** $email-whatever
+* **camelCase:** $emailWhatever
+* **snake-case:** $email-whatever
 
 #### $radiobtn$radiogrp
 
 validations a group of radio buttons (currently can't have a single radio button). you must put the group name after $radiogrp.
 
-**camelCase: ** $radiobtn$radiogrpGroupnameWhatever
-**snakeCase: ** $radiobtn-$radiogrp-groupname-whatever
+* **camelCase:** $radiobtn$radiogrpGroupnameWhatever
+* **snakeCase:** $radiobtn-$radiogrp-groupname-whatever
 
 
 ___
