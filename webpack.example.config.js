@@ -9,7 +9,7 @@ var config = {
   },
   output: {
     path: path.resolve(__dirname, 'lib/'),
-    filename: 'example.min.js'
+    filename: 'panda.min.js'
   },
   resolve: {
     alias: {

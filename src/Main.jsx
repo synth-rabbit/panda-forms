@@ -7,7 +7,7 @@ import FormStore from './stores/FormStore';
 import {info, required} from './data.js';
 
 let formStore = new FormStore(info, required, 'MM/DD/YYYY');
-
+//hello
 ReactDOM.render(
   <App formStore={formStore} />,
   document.getElementById('app')

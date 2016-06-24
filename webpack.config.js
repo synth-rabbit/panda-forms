@@ -48,10 +48,7 @@ var config = {
         loader: 'url-loader?limit=200000'
       }
     ]
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ]
+  }
 
 };
 
