@@ -25,7 +25,7 @@ const ErrorGroup = observer((props)=> {
 });
 
 ErrorGroup.propTypes = {
-  errors: React.PropTypes.array.isRequired
+  errors: React.PropTypes.object
 };
 
 export default ErrorGroup;

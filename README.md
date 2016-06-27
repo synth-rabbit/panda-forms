@@ -11,7 +11,7 @@ Panda Forms is a form library made with react and mobx to provide a way to rapid
 
   import {observer} from 'mobx-react';
 
-  import Form, FormRow, TextInputGroup, GroupContainer, RadioButtonGroup from 'panda-form';
+  import {Form, FormRow, TextInputGroup, GroupContainer, RadioButtonGroup} from 'panda-form';
 
   @observer
   export default class App extends React.Component {
@@ -104,7 +104,7 @@ Panda Forms is a form library made with react and mobx to provide a way to rapid
   import App from './App.jsx';
   import 'babel-polyfill';
 
-  import FormStore from './stores/FormStore';
+  import {FormStore} from './stores/FormStore';
 
   const initialInfo = {
     $emailEmail: '',

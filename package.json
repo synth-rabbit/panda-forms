@@ -2,13 +2,12 @@
   "name": "panda-form",
   "version": "0.1.0",
   "description": "A react modx form component library",
-  "main": "./lib/index.js",
+  "main": "./dist/panda-form.js",
   "scripts": {
     "test": "mocha --opts mocha.opts",
     "test:watch": "webpack -p /test/Calendar-test.js --target node mocha --opts mocha.opts --watch --reporter nyan",
     "dev": "webpack-dev-server --devtool eval --hot --inline --progress --colors --content-base build",
     "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js",
-    "example": "NODE_ENV=production webpack -p --config webpack.example.config.js",
     "unmin": "NODE_ENV=production webpack --config webpack.production.config.js",
     "lint": "eslint . --ext .js --ext .jsx || true"
   },

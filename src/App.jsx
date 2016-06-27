@@ -6,7 +6,7 @@ require('./styles/main.scss');
 
 import {observer} from 'mobx-react';
 
-import Form from './components/Form/Form.jsx';
+import {Form} from '../lib/panda-form.min.js';
 import FormRow from './components/FormRow/FormRow.jsx';
 import FormButton from './components/FormButton/FormButton.jsx';
 import TextInputGroup from './components/TextInputGroup/TextInputGroup.jsx';
@@ -49,7 +49,7 @@ export default class App extends React.Component {
     return(
       <div>
         <Form title='Form Title' styleClass='panda-form'>
-          {/*<ErrorGroup errors={this.props.formStore.errors} />*/}
+          <ErrorGroup errors={this.props.formStore.errors} />
           <FormRow styleClass='form-row'>
             <TextInputGroup
               groupWidth='33%'

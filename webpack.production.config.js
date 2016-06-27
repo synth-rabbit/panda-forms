@@ -5,12 +5,40 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var config = {
   entry: {
-    app: path.resolve(__dirname, 'src/Main.jsx')
+    app: path.resolve(__dirname, 'src/index.js')
   },
   output: {
-    path: path.resolve(__dirname, 'lib/'),
-    filename: 'panda.min.js'
+    path: path.resolve(__dirname, 'dist/'),
+    filename: 'panda-form.min.js',
+    library: 'panda-form',
+    libraryTarget: 'umd'
   },
+  externals: [
+    {
+      'react': {
+        root: 'React',
+        commonjs2: 'react',
+        commonjs: 'react',
+        amd: 'react'
+      }
+    },
+    {
+      'react-dom': {
+        root: 'ReactDOM',
+        commonjs2: 'react-dom',
+        commonjs: 'react-dom',
+        amd: 'react-dom'
+      }
+    },
+    {
+      'mobx': {
+        root: 'Mobx',
+        commonjs2: 'mobx',
+        commonjs: 'mobx',
+        amd: 'mobx'
+      }
+    }
+  ],
   resolve: {
     alias: {
       'react': 'react-lite',
@@ -48,11 +76,11 @@ var config = {
       loader: 'url-loader?limit=26000&mimetype=image/svg+xml&name=assets/img/img-[hash:6].[ext]'
     }, {
       test: /\.(woff|woff2|ttf|eot)/,
-      loader: 'url-loader?limit=10000&name=fonts/font-[hash:6].[ext]'
+      loader: 'url-loader?limit=1000000&name=fonts/font-[hash:6].[ext]'
     }]
   },
   plugins: [
-    new ExtractTextPlugin('assets/panda-form.css')
+    new ExtractTextPlugin('panda-form.css')
   ]
 };
 
