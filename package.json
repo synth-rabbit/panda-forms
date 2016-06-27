@@ -1,6 +1,6 @@
 {
   "name": "panda-form",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A react modx form component library",
   "main": "./dist/panda-form.js",
   "scripts": {
