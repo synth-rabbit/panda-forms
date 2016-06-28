@@ -6,7 +6,7 @@ require('./styles/main.scss');
 
 import {observer} from 'mobx-react';
 
-import {Form} from '../lib/panda-form.min.js';
+import {Form} from '../dist/panda-form.min.js';
 import FormRow from './components/FormRow/FormRow.jsx';
 import FormButton from './components/FormButton/FormButton.jsx';
 import TextInputGroup from './components/TextInputGroup/TextInputGroup.jsx';

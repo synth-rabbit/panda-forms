@@ -5,7 +5,9 @@ import React from 'react';
 export default function Form(props){
   return (
     <form style={props.styles} className={props.styleClass}>
-      <h2 className='panda-form__title'>
+      <h2
+        style={{display: props.title === undefined ? 'none' : 'block'}}
+        className='panda-form__title'>
         {props.title}
       </h2>
       {props.children}

@@ -1,6 +1,7 @@
 /* @flow */
 
-import {observable, action} from 'mobx';
+import {observable} from 'mobx';
+
 import {
           camelToSnake,
           removeTokens,
@@ -21,10 +22,14 @@ export default class FormStore {
   validateAll: Function;
   validate: Function;
   required: Array<string>;
+  updateInfo: Function;
+  updateRadio: Function;
+  getRadioGroup: Function;
+  getRadioGroupKeys: Function;
 
-  @observable errors = [];
-  @observable info = {};
-  @observable dateFormat = '';
+  @observable errors: Array<string> = [];
+  @observable info: Object = {};
+  @observable dateFormat: string = '';
 
 
   constructor(info: Object, required: Array<string>, dateFormat: string){
@@ -64,7 +69,7 @@ export default class FormStore {
     }
   }
 
-  getRadioGroup(key: string){
+  getRadioGroup(key: string): string{
     // get the group name
     let tokens = key.split('-');
     let location = tokens.indexOf('$radiogrp');
@@ -130,7 +135,7 @@ export default class FormStore {
     this.validate(key);
   }
 
-  updateRadio(key: string){
+  updateRadio(key: string): boolean{
     let groupKeys = this.getRadioGroupKeys(key);
 
     // set all the non-selected members of group to false

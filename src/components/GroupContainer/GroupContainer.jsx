@@ -2,8 +2,7 @@
 
 import React from 'react';
 
-export default function GroupContainer(props) {
-
+export default function GroupContainer(props){
   return(
     <div className={props.groupStyleClass} style={{width: props.groupWidth}}>
       <label className={props.labelStyleClass} htmlFor={props.id}>

@@ -6,7 +6,7 @@ export default function CheckboxGroup(props) {
   return(
     <div className={props.groupStyleClass} width={props.groupWidth}>
       <input
-        onChange={props.changeFunction.bind(event, props.id)}
+        onChange={props.changeFunction.bind(this, props.id)}
         type='checkbox'
         className={props.inputStyleClass}
         id={props.id}
